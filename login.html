@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Bejelentkezés és Regisztráció</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="png" href="pizzak/websiteicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid" style="background-color:#ffe37a">
+          <img src="pizzak/logo.jpg" style="width: 70px; height: 70px; -webkit-user-drag: none; border-radius: 50%;" alt="PIZZA" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pizzas.html">Főoldal 🏠</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="menu.html">Étlap 🍕</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="aboutus.html">Rólunk 🤝</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="login.html">Bejelentkezés 👤</a>
+                </li>  
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="form">
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Regisztráció</a></li>
+        <li class="tab"><a href="#login">Bejelentkezés</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Regisztrálj!</h1>     
+          <form action="/" method="post">
+         
+          <div class="top-row">
+            <div class="field-wrap">
+              <label  style="color: black;">Keresztnév<span class="req">*</span></label>
+              <input type="text" required autocomplete="off" style="border: 2px solid black; border-radius: 5px;  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);"/>
+            </div>
+        
+            <div class="field-wrap">
+              <label style="color: black;">Vezetéknév<span class="req">*</span></label>
+              <input type="text" required autocomplete="off" style="border: 2px solid black; border-radius: 5px; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8); ""/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label  style="color: black;">Email<span class="req">*</span></label>
+            <input type="email" required autocomplete="off" style="border: 2px solid black; border-radius: 5px; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8); ""/>
+          </div>
+          
+          <div class="field-wrap">
+            <label style="color: black;">Jelszó<span class="req">*Minimum 6 karakter!</span></label>
+            <input type="password" required autocomplete="off" style="border: 2px solid black; border-radius: 5px; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8); ""/>
+          </div>
+          
+          <button type="submit" class="button button-block">Regisztráció</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Üdvözöljük!</h1>
+          <form action="/" method="post">         
+            <div class="field-wrap">
+            <label style="color: black;">Email<span class="req"></span></label>
+            <input type="email"required autocomplete="off" style="border: 2px solid black; border-radius: 5px; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8); ""/>
+        </div>
+          
+        <div class="field-wrap">
+            <label style="color: black;">Jelszó<span class="req"></span></label>
+            <input type="password"required autocomplete="off" style="border: 2px solid black; border-radius: 5px; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8); ""/>
+        </div>
+          
+        <p class="forgot"><a href="#">Elfelejtette a jelszavát?</a></p>
+        <p class="forgot"><a href="#">Elfelejtette az e-mailt?</a></p>
+          
+        <button class="button button-block">Bejelentkezés</button>     
+        </form>
+    </div>       
+</div>
+      
+    </div> 
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/index.js"></script>
+        <script src="login.js"></script>
+  </body>
+</html>
